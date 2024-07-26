@@ -1,5 +1,7 @@
 import Button from '../../UI/Button/Button'
 import styles from './Main.module.scss'
+import { Plus } from 'lucide-react';
+import { Play } from 'lucide-react';
 
 const Information = ({ movie }) => {
 
@@ -27,11 +29,11 @@ const Information = ({ movie }) => {
 
             <div className={styles.buttons}>
                 <Button cb={() => console.log('video is open')/* setModulSHow(true) */ }>
-                    <i className='bx bx-play' style={{ color: 'c62e21' }}></i>
+                    <i style={{ color: 'c62e21' }}><Play /></i>
                     <span>Play</span>
                 </Button>
                 <Button cb={addToFavorites}>
-                    <i className='bx bx-plus'></i>
+                    <i><Plus /></i>
                     <span>My list</span>
                 </Button>
             </div>

@@ -1,10 +1,11 @@
 import styles from './Header.module.scss'
+import { Bell } from 'lucide-react';
 
 const Profile = () => {
 	return (
 		<div className={styles['profile-wrapper']}>
 			<div className={styles.notification}>
-				<i className='bx bxs-bell'></i>
+				<i><Bell /></i>
 				<span></span>
 			</div>
 			<div className={styles.profile}>

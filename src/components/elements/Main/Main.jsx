@@ -7,14 +7,15 @@ import { useState } from 'react'
 
 const Main = () => {
     const [isSidebarShow, setIsSidebarShow] = useState(false)
+
     return <div className={styles.wrapper}>
         <Sidebar 
             isSidebarShow={isSidebarShow}
             setIsSidebarShow={setIsSidebarShow}
         />
-        <div style={{
+        <div className={styles.main} style={{
             backgroundImage: `url(${DATA[0].mainImage})`, 
-            width: isSidebarShow ? 70 : 85
+            width: isSidebarShow ? '70%' : '85%'
             }}>
             <Information movie={DATA[0]} />
             <BottomNavigation />

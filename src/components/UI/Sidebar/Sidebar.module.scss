@@ -1,6 +1,21 @@
 .sidebar {
+    >button {
+        border-color: transparent;
+        border: none;
+        color: grey;
+        font-size: 30px;
+    }
+
     ul {
         list-style-type: none;
+        padding: 0;
+        display: none;
+        animation: opacity 0.4s;
+
+        &.show {
+            display: block;
+        }
+
         li{
             margin-bottom: .5rem;
             a{
@@ -10,6 +25,7 @@
                 text-decoration: none;
                 border-right: 2px solid transparent;
                 font-size: 20px;
+                text-align: right;
 
                 &:hover, &.active{
                     border-color: #c62e21;
