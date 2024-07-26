@@ -1,0 +1,19 @@
+.wrapper {
+    position: relative;
+    
+    .info {
+        width: 50px;
+
+        .additional {
+            display: flex;
+            align-items: center;
+            color: grey;
+            margin: 1rem 0;
+            
+            >span {
+                margin-right: 0.5rem;
+                font-size: 18px;
+            }
+        }
+    }
+}
