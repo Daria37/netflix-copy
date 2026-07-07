@@ -1,7 +1,12 @@
 import styles from './Header.module.scss'
 import { Bell } from 'lucide-react';
+import { useState } from 'react'
+// import { Menu } from './Menu'
 
 const Profile = () => {
+	const [isOpen, setOpen] = useState(false);
+	const handleOpen = () => setOpen(true);
+
 	return (
 		<div className={styles['profile-wrapper']}>
 			<div className={styles.notification}>
@@ -15,6 +20,15 @@ const Profile = () => {
 						alt=''
 					/>
 				</div>
+				{/* <Root>
+					<Control onClick={handleOpen} type='button'>{label}</Control>
+					{
+					isOpen && (
+						<Menu>
+						</Menu>       
+					)
+					}
+				</Root> */}
 				<i className='bx bx-caret-down'></i>
 			</div>
 		</div>
